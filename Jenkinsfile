@@ -20,7 +20,9 @@ pipeline {
                             -Dsonar.login=$SONAR_LOGIN \
                             -Dsonar.password=$SONAR_PASSWORD \
                             -Dsonar.projectKey=my_project_key \
-                            -Dsonar.sources=.
+                            -Dsonar.sources=. \
+                            -Dsonar.host.url=http://35.238.254.160:9000 \
+                            -Dsonar.projectBaseDir=/var/jenkins_home/workspace/Github-Scanner
                     '''
                 }
             }
