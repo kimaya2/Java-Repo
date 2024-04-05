@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     environment {
+        SONAR_URL = 'http://your-sonarqube-server-url'
         SONAR_LOGIN = 'admin'
         SONAR_PASSWORD = 'kimaya'
     }
@@ -22,7 +23,7 @@ pipeline {
                             -Dsonar.password=$SONAR_PASSWORD \
                             -Dsonar.projectKey=my_project_key \
                             -Dsonar.sources=. \
-                            -Dsonar.host.url=http://35.238.254.160:9000 \
+                            -Dsonar.host.url=$SONAR_URL \
                             -Dsonar.projectBaseDir=/var/jenkins_home/workspace/Github-Scanner
                     '''
                 }
