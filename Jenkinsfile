@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        SONAR_URL = 'http://your-sonarqube-server-url'
+        SONAR_URL = 'http://35.238.254.160:9000/'
         SONAR_LOGIN = 'admin'
         SONAR_PASSWORD = 'kimaya'
     }
