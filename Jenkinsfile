@@ -10,6 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
+                git 'https://github.com/kimaya2/Java-Repo'
             }
         }
         stage('SonarQube Analysis') {
