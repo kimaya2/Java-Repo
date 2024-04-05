@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         SONAR_LOGIN = 'admin'
-        SONAR_PASSWORD = 'admin'
+        SONAR_PASSWORD = 'kimaya'
     }
 
     stages {
